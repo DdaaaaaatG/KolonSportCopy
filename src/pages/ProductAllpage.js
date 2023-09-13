@@ -12,7 +12,8 @@ const ProductAllpage = () => {
 
     const getProduct = async () => {
       try {
-        let url = `http://localhost:3004/products?q=${query}`;
+        // let url = `http://localhost:3004/products?q=${query}`;
+        let url = `https://my-json-server.typicode.com/DdaaaaaatG/KolonSportCopy/products?q=${query}`;
         let response = await fetch(url);
         if (!response.ok) {
           throw new Error('Network response was not ok');
